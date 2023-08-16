@@ -10,6 +10,6 @@ export default async function handler(request, response) {
   const res = await fetch(url)
   const json = await res.json()
   response
-    .state(200)
+    .status(200)
     .json(json)
 }
